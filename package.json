@@ -1,0 +1,20 @@
+{
+  "name": "com.midou.utility",
+  "version": "0.1.0",
+  "displayName": "MidouUtility",
+  "description": "Personal Utility of GreenMidou",
+  "unity": "2022.0",
+  "unityRelease": "0a1",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+ "keywords": [
+    "Midou",
+    "Utility"
+  ],
+  "author": {
+    "name": "Midou",
+    "email": "greenmidou@gmail.com",
+    "url": "https://www.unity3d.com"
+  }
+}
