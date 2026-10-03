@@ -32,6 +32,11 @@ namespace Midou.Utility
             else if (progress < 2.5 / D1) { return N1 * (progress -= 2.25f / D1) * progress + 0.9375f; }
             else { return N1 * (progress -= 2.625f / D1) * progress + 0.984375f; }
         }
+        public static float EaseInOutQuint(float t)
+        {
+            var progress = Mathf.Clamp01(t);
+            return progress < 0.5f ? 16f * progress * progress * progress * progress * progress : 1f - Mathf.Pow(-2f * progress + 2f, 5f) / 2f;
+        }
         public static Vector3 Bezier(float t, Vector3 A, Vector3 outTangent, Vector3 B, Vector3 inTangent)
         {
             t = Mathf.Clamp01(t);
